@@ -41,7 +41,7 @@ const Movie: React.FC = () => {
                 className="rounded-2xl py-1 md:ml-16 xx:w-[191px] xx:pb-36 sm:w-[191px] md:w-[191px]  sm:h-[325px] h-[325px]"
               />
             )}
-            <div>
+            <div className="md:ml-16 lg:ml-0">
               <div className=" xx:ml-30  xx:text-2xl">
                 <button className="p-1  border ml-2  border-black rounded-full">
                   Action
@@ -60,7 +60,7 @@ const Movie: React.FC = () => {
               </div>
             </div>
 
-            <div className="min-w-[47%] xx:absolute  xl:ml-8  md:flex ">
+            <div className="min-w-[47%] xx:absolute  xl:ml-8 md:ml-16 lg:ml-0 md:flex ">
               {movie && (
                 <img
                   src={`https://image.tmdb.org/t/p/w200/${movie?.backdrop_path}`}
