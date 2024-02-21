@@ -16,7 +16,7 @@ const PopularMovies: React.FC = () => {
   return (
     <>
       <div className="flex">
-        <div className="min-w-[25%] grid grid-cols-2 xx:gap-4 md:gap-48 lg:gap-[160px] xl:gap-4 pl-20 ">
+        <div className=" grid grid-cols-2 xx:gap-4 md:gap-48 lg:gap-[160px] xl:gap-6 pl-20 ">
           {popular.slice(0, 2).map((movie) => (
             <div key={movie.id}>
               {movie.poster_path && (
@@ -40,7 +40,7 @@ const PopularMovies: React.FC = () => {
           Popular Release
         </h1>
       </div>
-      <div className="min-w-[177px]  min-h-[263px] py-6 ">
+      <div className="min-w-[177px] max-h-[263px] py-6 ">
         <ReleaseMovie />
       </div>
     </>

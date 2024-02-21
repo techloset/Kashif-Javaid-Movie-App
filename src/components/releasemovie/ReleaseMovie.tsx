@@ -12,21 +12,29 @@ export default function ReleaseMovie() {
     dispatch(ReleasData());
   }, [dispatch]);
   return (
-    <div className="min-w-[90%] mx-20">
+    <div className="w-[100%] mx-20">
       <Swiper
-        slidesPerView={2}
+        slidesPerView={3}
         spaceBetween={20}
         breakpoints={{
+          350: {
+            slidesPerView: 1,
+            spaceBetween: -160,
+          },
+          400: {
+            slidesPerView: 1,
+            spaceBetween: -200,
+          },
           768: {
-            slidesPerView: 6,
+            slidesPerView: 4,
             spaceBetween: 14,
           },
           992: {
-            slidesPerView: 6,
+            slidesPerView: 5,
             spaceBetween: 14,
           },
           1200: {
-            slidesPerView: 8,
+            slidesPerView: 7,
             spaceBetween: 14,
           },
         }}
@@ -39,7 +47,7 @@ export default function ReleaseMovie() {
                   <img
                     src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`}
                     alt={`${movie.title} poster`}
-                    className="rounded-3xl md:w-[177px] md:h-[200px] lg:w-[177px] lg:h-[277px]"
+                    className="rounded-3xl "
                   />
                 </Link>
               )}

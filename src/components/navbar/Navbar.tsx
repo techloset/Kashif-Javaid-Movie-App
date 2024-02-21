@@ -39,12 +39,12 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div className="hidden md:flex mx-auto py-[46px] ">
+        <div className="hidden md:flex mx-auto py-[46px] text-black ">
           <form onSubmit={handleSearch}>
             <input
               type="search"
               id="search"
-              className="md:w-[550px] lg:w-[630px] h-[57px] bg-gray-300 outline-none text-center rounded-full"
+              className="md:w-[550px] lg:w-[630px] h-[57px] bg-gray-300 outline-none text-center rounded-full placeholder-black placeholder:font-medium "
               value={searchQuery}
               placeholder="🔍 Search a movie or a series"
               onChange={(e) => setSearchQuery(e.target.value)}
