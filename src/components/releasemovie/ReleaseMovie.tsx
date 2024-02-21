@@ -17,13 +17,9 @@ export default function ReleaseMovie() {
         slidesPerView={3}
         spaceBetween={20}
         breakpoints={{
-          320: {
+          390: {
             slidesPerView: 1,
-            spaceBetween: -80,
-          },
-          400: {
-            slidesPerView: 1,
-            spaceBetween: -170,
+            spaceBetween: -150,
           },
           768: {
             slidesPerView: 4,
