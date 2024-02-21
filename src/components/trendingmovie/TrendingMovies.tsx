@@ -10,7 +10,7 @@ export default function TrendingMovie() {
   }, [dispatch]);
   return (
     <>
-      <div className="md:min-w-[100%] md:ms-28 xl:mx-0 md:gap-4 md:flex md:pl-32">
+      <div className="md:ms-28 xl:mx-0 md:gap-4 md:flex md:pl-32">
         {trending.slice(0, 4).map((movie) => (
           <div key={movie.id} className="">
             {movie.poster_path && (

@@ -12,18 +12,18 @@ export default function ReleaseMovie() {
     dispatch(ReleasData());
   }, [dispatch]);
   return (
-    <div className="w-[100%] mx-20">
+    <div className="w-[90%] mx-20">
       <Swiper
         slidesPerView={3}
         spaceBetween={20}
         breakpoints={{
-          350: {
+          320: {
             slidesPerView: 1,
-            spaceBetween: -160,
+            spaceBetween: -80,
           },
           400: {
             slidesPerView: 1,
-            spaceBetween: -200,
+            spaceBetween: -170,
           },
           768: {
             slidesPerView: 4,
@@ -34,7 +34,7 @@ export default function ReleaseMovie() {
             spaceBetween: 14,
           },
           1200: {
-            slidesPerView: 7,
+            slidesPerView: 6,
             spaceBetween: 14,
           },
         }}
