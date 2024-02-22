@@ -26,7 +26,7 @@ const Movie: React.FC = () => {
             <h1>{movie && movie.original_title}</h1>
           </div>
           <div className="hidden lg:block ">
-            <button className="text-black flex font-medium text-center lg:mr-12 rounded-full bg-gray-200 border border-gray-100 mx-5 py-2 m-3 p-5 hover:bg-gray-400">
+            <button className="text-black flex font-medium text-center mr-40 rounded-full bg-gray-200 border border-gray-100 mx-5 py-2 m-3 p-5 hover:bg-gray-400">
               <img src={image5} alt="Logo" />
               <p className="ml-2">Add to watchlist</p>
             </button>
@@ -99,7 +99,7 @@ const Movie: React.FC = () => {
           </div>
         </div>
         <div className="cursor-pointer pb-5 xx:hidden md:hidden lg:block">
-          <div className="flex gap-4  w-[80%] ml-16">
+          <div className="flex gap-4  w-[90%] ml-20">
             <img src={image1} alt="image1" />
             <img src={image2} alt="image2" />
             <img src={image3} alt="image3" />

@@ -31,7 +31,7 @@ export default function ReleaseMovie() {
             spaceBetween: 14,
           },
           1200: {
-            slidesPerView: 6,
+            slidesPerView: 7,
             spaceBetween: 14,
           },
         }}
