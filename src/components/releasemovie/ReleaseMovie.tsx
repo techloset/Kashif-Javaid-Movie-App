@@ -11,6 +11,7 @@ export default function ReleaseMovie() {
   useEffect(() => {
     dispatch(ReleasData());
   }, [dispatch]);
+  // slider
   return (
     <div className="w-[90%] mx-20">
       <Swiper
