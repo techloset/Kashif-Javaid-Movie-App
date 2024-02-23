@@ -13,7 +13,7 @@ export default function ReleaseMovie() {
   }, [dispatch]);
   // slider
   return (
-    <div className="w-[93%] mx-20">
+    <div className="w-[90%] mx-20">
       <Swiper
         slidesPerView={3}
         spaceBetween={20}

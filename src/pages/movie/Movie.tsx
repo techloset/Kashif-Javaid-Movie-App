@@ -25,7 +25,7 @@ const Movie: React.FC = () => {
           <div className="font-bold text-black text-[40px] py-4 ml-16">
             <h1>{movie && movie.original_title}</h1>
           </div>
-          <div className="hidden lg:block xl:mr-14 ">
+          <div className="hidden lg:block lg:mr-32 ">
             <button className="text-black flex font-medium text-center  rounded-full bg-gray-200 border border-gray-100 mx-5 py-2 m-3 p-5 hover:bg-gray-400">
               <img src={image5} alt="Logo" />
               <p className="ml-2">Add to watchlist</p>
