@@ -15,8 +15,8 @@ const PopularMovies: React.FC = () => {
 
   return (
     <>
-      <div className="flex justify-end">
-        <div className="flex xx:gap-4 gap-4">
+      <div className="flex justify-between ">
+        <div className=" grid grid-cols-2 xx:gap-4 sm:gap-48 lg:gap-36 xl:gap-4  pl-16 ">
           {popular.slice(0, 2).map((movie) => (
             <div key={movie.id}>
               {movie.poster_path && (
