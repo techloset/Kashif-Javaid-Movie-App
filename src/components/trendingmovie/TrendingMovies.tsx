@@ -18,7 +18,7 @@ export default function TrendingMovie() {
                 <img
                   src={`https://image.tmdb.org/t/p/w185/${movie.poster_path}`}
                   alt={`${movie.title} poster`}
-                  className="rounded-3xl lg:min-w-[177px] sm:hidden lg:flex"
+                  className="rounded-3xl lg:min-w-[177px] lg:h-[263px] sm:hidden lg:flex"
                 />
               </Link>
             )}

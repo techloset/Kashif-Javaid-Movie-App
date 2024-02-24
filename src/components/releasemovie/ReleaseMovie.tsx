@@ -13,18 +13,18 @@ export default function ReleaseMovie() {
   }, [dispatch]);
   // slider
   return (
-    <div className="w-[90%] mx-20">
+    <div className="w-[86%] xx:ml-5 sm:ml-0 md:ml-16 ">
       <Swiper
         slidesPerView={3}
         spaceBetween={20}
         breakpoints={{
-          400: {
+          370: {
             slidesPerView: 2,
-            spaceBetween: 14,
+            spaceBetween: 40,
           },
           768: {
             slidesPerView: 4,
-            spaceBetween: 14,
+            spaceBetween: 80,
           },
           992: {
             slidesPerView: 5,
@@ -44,7 +44,7 @@ export default function ReleaseMovie() {
                   <img
                     src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`}
                     alt={`${movie.title} poster`}
-                    className="rounded-3xl "
+                    className="rounded-3xl xx:min-w-[170px] xx:max-h-[254px] lg:w-[177px] lg:h-[263px]"
                   />
                 </Link>
               )}

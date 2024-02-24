@@ -14,7 +14,7 @@ export default function Navbar() {
     <>
       <div className="flex">
         <div className="py-[40px] flex ">
-          <h1 className="md:text-4xl text-black text-4xl font-semibold  pl-20">
+          <h1 className="md:text-4xl text-black text-4xl font-semibold pl-5 lg:pl-20">
             The
             <br />
             Movie

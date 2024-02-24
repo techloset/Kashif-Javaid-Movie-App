@@ -15,28 +15,28 @@ const PopularMovies: React.FC = () => {
 
   return (
     <>
-      <div className="flex ">
-        <div className=" grid grid-cols-2 xx:gap-4 sm:gap-48 lg:gap-36 xl:gap-4  pl-16 ">
+      <div className="mx-3 md:ml-16 ">
+        <div className="flex gap-3">
           {popular.slice(0, 2).map((movie) => (
             <div key={movie.id}>
               {movie.poster_path && (
                 <Link to={`/movie/${movie.id}`}>
                   <img
-                    src={`https://image.tmdb.org/t/p/w185/${movie.poster_path}`}
+                    src={`https://image.tmdb.org/t/p/w200/${movie.poster_path}`}
                     alt={`${movie.title} poster`}
-                    className="rounded-3xl md:min-w-[177px]"
+                    className="rounded-3xl xx:min-w-[170px] xx:max-h-[254px] lg:w-[177px] lg:h-[263px]"
                   />
                 </Link>
               )}
             </div>
           ))}
-        </div>
-        <div className="md:min-w-[70%] xx:hidden sm:hidden md:flex lg:flex ">
-          <TrendingMovie />
+          <div className="sm:hidden xx:hidden md:block">
+            <TrendingMovie />
+          </div>
         </div>
       </div>
       <div className="py-4">
-        <h1 className="ml-20 text-2xl font-medium text-black ">
+        <h1 className=" xx:ml-8 text-2xl font-medium text-black xl:ml-16  ">
           Popular Release
         </h1>
       </div>
