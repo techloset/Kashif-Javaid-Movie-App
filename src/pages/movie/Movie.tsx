@@ -26,7 +26,7 @@ const Movie: React.FC = () => {
             <h1>{movie && movie.original_title}</h1>
           </div>
           <div className="hidden lg:block ">
-            <button className="text-black flex font-medium text-center  rounded-full bg-gray-200 border border-gray-100 mx-5 py-2 m-3 p-5 hover:bg-gray-400 xl:mr-20">
+            <button className="text-black flex font-medium text-center  rounded-full bg-custom-background border border-gray-200 mx-5 py-2 m-3 p-5 xl:mr-20">
               <img src={image5} alt="Logo" />
               <p className="ml-2">Add to watchlist</p>
             </button>
@@ -38,34 +38,41 @@ const Movie: React.FC = () => {
               <img
                 src={`https://image.tmdb.org/t/p/w200/${movie?.poster_path}`}
                 alt={`Poster for ${movie?.original_title}`}
-                className="rounded-2xl py-1 md:ml-16 xx:w-[191px] xx:pb-36 sm:w-[191px] md:w-[191px]  sm:h-[325px] h-[325px]"
+                className="rounded-2xl py-1 md:ml-16 xx:w-[191px] xx:pb-36 sm:w-[191px]
+                h-[291px]"
               />
             )}
-            <div className="md:ml-16 lg:ml-0">
-              <div className=" xx:ml-30  xx:text-2xl">
-                <button className="p-1  border ml-2  border-black rounded-full">
+            <div className="md:ml-16 lg:ml-3">
+              <div className=" xx:ml-30  sm:ml-0 xx:text-2xl xx:mt-32 ">
+                <button className="px-3 p-1 border ml-2 xx:ml-3  border-black rounded-full font-roboto font-bold text-sm text-black">
                   Action
                 </button>
-                <button className="m-2 p-1 px-2 border ml-2 border-black rounded-full">
+                <button className="p-1 px-3  border ml-[20px] border-black rounded-full font-roboto font-bold text-sm text-black">
                   Sci-Fi
                 </button>
-                <div className="ml-3 text-balance text-justify cursor-text">
+                <div className="ml-3 mt-[19px] xx:mx-4 mx-48 text-balance text-justify font-roboto font-bold text-sm text-black cursor-text">
                   {movie && <div>{movie?.overview}</div>}
                 </div>
-                <div className="ml-3 mt-auto">
-                  <h1 className="text-sm md:text-base">IMDB</h1>
-                  <p className="ml-4 text-xs md:text-sm">8k Reviews</p>
-                  <p className="text-xs md:text-sm">⭐ 9.1/10</p>
+                <div className="flex ml-4 mt-[40px]">
+                  <div>
+                    <h1 className="text-xl font-roboto  font-normal ">
+                      IMDB Rating
+                    </h1>
+                    <p className="text-xs md:text-sm ml-1">⭐ 9.1/10</p>
+                  </div>
+                  <p className="ml-4 text-xs md:text-sm mt-3 font-roboto text-color">
+                    8k Reviews
+                  </p>
                 </div>
               </div>
             </div>
 
-            <div className="min-w-[47%] xx:absolute sm:ml-20 md-ml-0 xl:ml-10  lg:ml-5 md:flex ">
+            <div className="min-w-[50%] xx:absolute sm:ml-20  md:flex justify-end ">
               {movie && (
                 <img
                   src={`https://image.tmdb.org/t/p/w200/${movie?.backdrop_path}`}
                   alt={`Backdrop for ${movie?.original_title}`}
-                  className=" w-[591px] h-[325px] rounded-2xl py-1  cursor-pointer md:mb-0 mb-36 "
+                  className=" w-[591px] h-[400px] rounded-2xl py-1 mr-20 cursor-pointer md:mb-0 mb-36 "
                 />
               )}
             </div>
@@ -77,22 +84,22 @@ const Movie: React.FC = () => {
           </div>
           <div className="py-1 ml-4 ">
             <Link to="/">
-              <button className="mr-2 w-[43.27px] h-[43.27px] rounded-md border border-gray-400 bg-gray-300">
+              <button className="mr-2 w-[43.27px] h-[43.27px] rounded-md border border-gray-400 bg-custom-background">
                 1
               </button>
             </Link>
             <Link to="#">
-              <button className="mr-2 w-[43.27px] h-[43.27px] rounded-md border border-gray-400 bg-gray-300">
+              <button className="mr-2 w-[43.27px] h-[43.27px] rounded-md border border-gray-400 bg-custom-background">
                 2
               </button>
             </Link>
             <Link to="/search/query">
-              <button className="mr-2 w-[43.27px] h-[43.27px] rounded-md border border-gray-400 bg-gray-300">
+              <button className="mr-2 w-[43.27px] h-[43.27px] rounded-md border border-gray-400 bg-custom-background">
                 3
               </button>
             </Link>
             <Link to="/">
-              <button className="mr-2 w-[43.27px] h-[43.27px] rounded-md border border-gray-400 bg-gray-300">
+              <button className="mr-2 w-[43.27px] h-[43.27px] rounded-md border border-gray-400 bg-custom-background">
                 4
               </button>
             </Link>

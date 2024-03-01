@@ -6,6 +6,14 @@ module.exports = {
       screens: {
         xx: { min: "300px", max: "640px" },
       },
+      colors: {
+        "body-gray": "#EBEAEA",
+        "custom-background": "#D9D9D9",
+        "text-color": "#636363",
+      },
+      fontFamily: {
+        roboto: ["Roboto", "sans-serif"],
+      },
     },
   },
   plugins: [],
