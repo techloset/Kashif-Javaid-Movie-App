@@ -42,7 +42,7 @@ const Movie: React.FC = () => {
               <img
                 src={`https://image.tmdb.org/t/p/w200/${movie?.poster_path}`}
                 alt={`Poster for ${movie?.original_title}`}
-                className="lg:rounded-2xl py-1 md:ml-16 xx:w-[98px] xx:h-[146px] xx:ml-10 "
+                className="lg:rounded-2xl py-1 md:ml-16 xx:w-[98px] xx:h-[146px]  xx:ml-10 "
               />
             )}
             <div className="md:ml-16 lg:ml-3 lg:mt-5 xx:mt-10 xx:ml-2">
@@ -55,7 +55,7 @@ const Movie: React.FC = () => {
                 </button>
                 <div className="mr-5 mt-[25px] xx:mx-4 sm:mx-0  text-justify cursor-text xl:ml-2 ">
                   {movie && (
-                    <div className=" font-roboto font-medium text-lg leading-5">
+                    <div className=" font-roboto font-medium text-lg leading-5 mx-2">
                       {movie?.overview}
                     </div>
                   )}
@@ -74,7 +74,7 @@ const Movie: React.FC = () => {
               </div>
             </div>
 
-            <div className="xx:absolute sm:ml-20  md:flex justify-end mx-3 ">
+            <div className="xx:absolute sm:ml-20   md:flex justify-end mx-3 ">
               {movie && (
                 <img
                   src={`https://image.tmdb.org/t/p/w200/${movie?.backdrop_path}`}
