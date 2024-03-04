@@ -36,13 +36,13 @@ const Movie: React.FC = () => {
             </button>
           </div>
         </div>
-        <div className="py-[-5px]">
+        <div className="py-[-5px]  ">
           <div className="flex flex-col lg:flex-row  xx:rounded-full ">
             {movie && (
               <img
                 src={`https://image.tmdb.org/t/p/w200/${movie?.poster_path}`}
                 alt={`Poster for ${movie?.original_title}`}
-                className="lg:rounded-2xl py-1 md:ml-16 xx:w-[98px] xx:h-[146px]  xx:ml-10 "
+                className="lg:rounded-2xl py-1 md:ml-16 xx:w-[98px] xx:h-[146px] h-[320px] xx:ml-10 "
               />
             )}
             <div className="md:ml-16 lg:ml-3 lg:mt-5 xx:mt-10 xx:ml-2">
@@ -75,16 +75,19 @@ const Movie: React.FC = () => {
             </div>
 
             <div className="xx:absolute sm:ml-20   md:flex justify-end mx-3 ">
-              {movie && (
-                <img
-                  src={`https://image.tmdb.org/t/p/w200/${movie?.backdrop_path}`}
-                  alt={`Backdrop for ${movie?.original_title}`}
-                  className=" w-[591px] h-[291px] xl:min-w-[591px] xl:min-h-[291px] rounded-2xl py-1 mr-20 cursor-pointer md:mb-0  "
-                />
-              )}
+              <div className="h-[291px]">
+                {movie && (
+                  <img
+                    src={`https://image.tmdb.org/t/p/w200/${movie?.backdrop_path}`}
+                    alt={`Backdrop for ${movie?.original_title}`}
+                    className="  xl:min-w-[591px]  rounded-2xl py-1 mr-20 cursor-pointer md:mb-0  "
+                  />
+                )}
+              </div>
             </div>
           </div>
         </div>
+
         <div className="md:flex md:py-10 md:ml-20 hidden">
           <div>
             <h1 className="text-3xl font-roboto font-bold  ">Seasons</h1>
